@@ -1,0 +1,101 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+.container{
+  display: flex;
+  width:100%;
+  height:100%;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding-top: 64px;
+  background-color: #fff;
+}
+
+.containerList{
+  display: flex;
+  height:100%;
+  width:100%;
+  max-width: 1168px;
+  padding: 0 56px;
+  flex-direction: column;
+}
+.listHeader{
+  display: flex;
+  flex-shrink: 0;
+  min-height: 48px;
+  border-top: 1px solid $chrome;
+  border-bottom: 1px solid $chrome;
+}
+.headerItem{
+  align-items: center;
+  display: flex;
+  color: $soapstone;
+  font-family:'AvenirNext-DemiBold';
+  font-size: 12px;
+  font-weight: 600;
+}
+.leftHeaderItem{
+  composes: headerItem;
+  justify-content: flex-start;
+}
+.rightHeaderItem{
+  composes: headerItem;
+  justify-content: flex-end;
+}
+.centerHeaderItem{
+  composes: headerItem;
+  justify-content: center;
+  text-align: center;
+}
+.emptyCell{
+  composes: leftHeaderItem;
+  flex-basis: 3%;
+}
+
+.imageCell{
+  composes: centerHeaderItem;
+  flex-basis: 5%;
+}
+
+.nameCell{
+  composes: leftHeaderItem;
+  flex-basis: 17%;
+}
+
+.courseCell{
+  composes: leftHeaderItem;
+  flex-basis: 20%;
+}
+
+.taggedPostCell{
+  composes: centerHeaderItem;
+  flex-basis: 14%;
+}
+
+.familyInviteCell{
+  composes: centerHeaderItem;
+  flex-basis: 14%;
+}
+
+.studentCodeCell{
+  composes: centerHeaderItem;
+  flex-basis: 14%;
+}
+
+.actionCell{
+  composes: centerHeaderItem;
+  flex-basis: 10%;
+}
+
+
+
+.noTeacherContainer{
+  display: flex;
+  width:100%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  min-height: 150px;
+}

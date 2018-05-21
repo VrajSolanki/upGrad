@@ -1,0 +1,86 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 40px 80px;
+}
+.questionText{
+  font-size: 2.4rem;
+  font-weight: 600;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.questionListHeader{
+  height: 80px;
+  margin: 16px 0;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  flex-direction: row;
+  border-radius: 4px;
+  border: 1px solid $chrome;
+  box-shadow: 0px 0px 2px 2px $snow;
+}
+.selectAll{
+  padding: 0 16px;
+  display: flex;
+  flex-basis: 10%;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex-direction: row;
+  border-right: 1px solid $chrome;
+}
+.checkbox{
+  height: 24px;
+  width: 24px;
+}
+.content{
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: $snow;
+}
+.select{
+  padding: 0 0 0 16px;
+  flex-basis: 60%;
+}
+.buttons{
+  flex-basis: 30%;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+}
+.assign{
+  border-radius: 4px;
+  width: 80px;
+  margin-right: 24px;
+}
+.add{
+  background: #fff;
+  border-radius: 4px;
+  width: 180px;
+  color: $ocean;
+}
+.studentRow{
+  width: "100%";
+  display: flex;
+  height: 40px;
+  flex-direction: row;
+}

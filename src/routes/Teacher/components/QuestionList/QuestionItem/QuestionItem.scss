@@ -1,0 +1,130 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  width: 100%;
+  height: 80px;
+  margin: 8px 0;
+  flex-shrink: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 0 0 16px;
+  flex-shrink: 0;
+  height: 100%;
+}
+.questionText{
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.questionListHeader{
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+.checkbox{
+  height: 24px;
+  width: 24px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.content{
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  border: 1px solid $chrome;
+  box-shadow: 0px 0px 2px 2px $snow;
+  height: 100%;
+}
+.srNoandNo{
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 6%;
+  height: 100%;
+  display: flex;
+  background-color: $snow;
+  padding: 0 16px;
+}
+
+.number{
+  display: flex;
+  font-size: 2.2rem;
+  align-self: flex-start;
+}
+
+.srNo{
+  display: flex;
+  color: $nickel;
+}
+
+.titleSubtitle{
+  padding: 0 0 0 16px;
+  justify-content: center;
+  flex-direction: column;
+  flex-basis: 78%;
+}
+
+.title{
+  font-size: 1.4rem;
+  font-weight: 800;
+  height: 22px;
+  overflow: hidden;
+}
+
+.subtitle{
+  font-size: 1.4rem;
+  color: $soapstone;
+  height: 22px;
+  overflow: hidden;
+}
+
+.questextAndType{
+  justify-content:center;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 16%;
+  padding: 0 16px;
+  height: 100%;
+  display: flex;
+  background-color: $snow;
+  border-left: 1px solid $chrome;
+  border-right: 1px solid $chrome;
+}
+
+.typeText{
+  color: $soapstone;
+}
+.type{
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.actions{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 16px;
+}
+.icon{
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+.editIcon{
+  composes: icon;
+  margin-top: 4px;
+}

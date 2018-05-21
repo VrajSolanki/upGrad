@@ -1,0 +1,35 @@
+:global {
+  @import 'base';
+  @import '~normalize.css/normalize';
+  // Some best-practice CSS that's useful for most apps
+  // Just remove them if they're not what you want
+  html {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'AvenirNextLTW01-Regular', 'Avenir Next LT W01 Demi', 'AvenirNextLTW01-UltraLi','Avenir Next W01 Thin', 
+                  'AvenirNextLTW01-Medium', 'Avenir Next LT W01 Bold', 'AvenirNextLTW01-Heavy', 'Avenir Next W01 Light',
+                  'AvenirNextLTW01-DemiCn', 'AvenirNextLTW01-MediumC_721311', 'AvenirNextLTW01-BoldCn'
+  }
+  #root{
+      background: #F0F3F8;
+      // background: url('../static/images/bg.jpg');
+      // background-size: cover;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .navbar{
+    margin-bottom: 1px;
+    border-radius: 0;
+  }
+
+}

@@ -1,0 +1,18 @@
+
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+
+.profileIcon{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid #f0f0f3;
+}
+
+.profileText{
+    display: flex;
+    color:#ffffff;
+    text-align: center;
+    align-self: center;
+}

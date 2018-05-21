@@ -1,0 +1,50 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+}
+.titleAndValue{
+    display: flex;
+    margin: 32px 0 16px 0;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+
+.answerOptions{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    flex-shrink: 0;
+}
+.answerSelect{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.radioOptions{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin: 8px 0;
+    input[type='radio']{
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+    }
+    span{
+        color: #aaa;
+    }
+}
+.optionInputField{
+    display: flex;
+    margin: 8px 0 0 8px;
+    flex-shrink: 0;
+}

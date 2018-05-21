@@ -1,0 +1,91 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+.loginContainer{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.loginComp{
+    display: flex;
+    width: 540px;
+    height: 340px;
+    border: 2px solid $chrome;
+    flex-direction: column;
+}
+.loginHeader{
+    display: flex;
+    flex-direction: row;
+    padding: 0 32px;
+    flex-basis: 15%;
+    align-items: center;
+    border-bottom: 1px solid $chrome;
+}
+.loginBody{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    flex-basis: 60%;
+}
+.loginFooter{
+    display: flex;
+    flex-direction: row;
+    padding: 0 32px;
+    border-top: 1px solid $chrome;
+    flex-basis: 25%;
+    justify-content: space-between;
+    align-items: center;
+}
+.userSelect{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+.radioOptions{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 8px 0;
+    input{
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+    }
+    span{
+        color: #aaa;
+    }
+}
+
+.footerButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cancelButton{
+    display: flex;
+    background-color: transparent;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    color: #aaaaaa;
+    width: 64px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    cursor: pointer;
+}
+.loginButton{
+    display: flex;
+    width: 80px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #4fa3f2;
+    color: #fff;
+    cursor: pointer;
+}
+.option{
+    margin-top: 7px
+}

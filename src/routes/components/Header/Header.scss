@@ -1,0 +1,25 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+
+.container{
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  flex-shrink: 0;
+  border-bottom: 2px solid $chrome;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 32px;
+  background-color: #fff;
+}
+
+.imageContainer{
+    width: 140px;
+    height: 56px;
+}
+
+.navigate{
+  cursor: pointer;
+}

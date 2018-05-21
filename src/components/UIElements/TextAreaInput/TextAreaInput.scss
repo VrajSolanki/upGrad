@@ -1,0 +1,40 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+.container{
+  display: flex;
+  width: 100%;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.inputText{
+  width:100%;
+  border: 1px solid black;
+  resize: none;
+  outline: none;
+  padding:8px;
+  margin-top: 8px;
+  background-color:inherit;
+}
+.inputTextDisable{
+  composes: inputText;
+  border: none;
+  padding: 0px;
+}
+.inputLabel{
+  font-family: "AvenirNextLTW01-DemiCn";
+  font-size: 1.6rem;
+  color:black;
+  letter-spacing: 0.02rem;
+}
+.error{
+  display: flex;
+  flex-grow: 0;
+  font-size: 1.3rem;
+  color:$error;
+  margin-top: 6px;
+  height: 16px;
+}
+.errorBorder{
+  border: 1px solid $error;
+}

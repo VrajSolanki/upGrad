@@ -1,0 +1,54 @@
+@import "~components/UIElements/sass/variables";
+
+.alertMessage{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-grow: 1;
+  padding:24px 20px 24px 20px;
+}
+
+.alertText{
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-self: center;
+  text-wrap: wrap;
+  width:200px;
+}
+
+.Svg{
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex-basis: 24px;
+  margin-right: 20px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  & svg{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.toastr :global, .toastr_center :global{
+
+  #toast-container>.toast-success {
+    background-color: $lead;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    // left: 70%;
+
+    background-image:none !important;
+    padding: 0px;
+  }
+  button.toast-close-button{
+    display: none;
+  }
+}
+
+.toastr_center :global{
+  #toast-container {
+     top:10%;
+  }
+}

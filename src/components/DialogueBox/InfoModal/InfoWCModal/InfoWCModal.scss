@@ -1,0 +1,69 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+.cell {
+  border: 1px solid $snow;
+  padding:12px 8px;
+  flex:1;
+}
+
+.stdTableCell{
+  @extend .cell;
+}
+
+.headerTableCell{
+  @extend .cell;
+}
+
+.stdContentCell{
+  @extend .cell;
+  @include avenir-next-bo() ;
+}
+
+.headingRow{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid $snow;
+}
+
+.contentRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.tablePanel{
+  padding: 24px;
+  padding-top: 0px;
+  width:72%;
+  margin-left: 48px;
+}
+
+.contentRows{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $snow;
+}
+
+.tableSection {
+  display: flex;
+  flex-direction: columns;
+}
+
+.tableHeaderTitle{
+  font-family: 'Avenir Next LT W01 Bold';
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+.tableTitle{
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+.boldListKey{
+  font-family: 'Avenir Next LT W01 Bold';
+  font-size: 14px;
+  list-style-type: none;
+  margin-left: -16px;
+}

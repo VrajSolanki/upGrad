@@ -1,0 +1,41 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+$text-color:	#b8bcc8;
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+.headerComp{
+    display: flex;
+    flex-direction: row;
+    height: 64px;
+    border-bottom: 2px solid $chrome;
+    padding: 0 64px;
+    align-items: center;
+}
+.bodyComp{
+    display: flex;
+    flex-direction: column;
+    width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+.stepComponent{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.logoHolder{
+    display: flex;
+    width: 120px;
+    height: 48px;
+    
+}

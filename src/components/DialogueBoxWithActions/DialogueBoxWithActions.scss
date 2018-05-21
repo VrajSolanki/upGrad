@@ -1,0 +1,120 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+@import "~components/UIElements/sass/mixins/buttons";
+
+.footerContainer{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rightSide{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.leftSide{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.container{
+  position: fixed;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  height:100%;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 4px;
+  cursor: default;
+}
+.modalContent{
+  display: flex;
+  flex-grow: 0;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 584px;
+  height: 324px;
+  border-radius: 4px;
+}
+.modalHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 64px;
+  padding: 48px 48px 32px 48px;
+  font-size: 2.2rem;
+  font-family: 'Avenir Next LT W01 Bold';
+  border-radius: 4px;
+}
+.modalFooter{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0px 48px 48px 48px;
+}
+.button1Div{
+  display: flex;
+  flex-basis: 42%;
+}
+.button1 {
+  background-color: $smoke;
+  color: $lead;
+  margin-right: 16px;
+  &:hover{
+    color: $lead;
+    background-color: $smoke;
+  }
+}
+.button2, .button1{
+  font-size: 1.4rem
+}
+.button2{
+  background-color: $ocean;
+  color: #ffffff;
+  &:hover{
+    background-color: #2687FB;
+    border:0px;
+  }
+  &:focus{
+    background: #2687FB;
+    border: 2px solid #007AFF;
+  }
+}
+.button3{
+  background-color: $reddish-pink;
+  color: #fff;
+  &:hover{
+    background: #FF5475;
+    border:0px;
+  }
+   &:focus{
+     background: #FF5475;
+     border: 2px solid #FF2D55;
+  }
+}
+.modalBody{
+  font-size: 1.8rem;
+  color: $lead;
+  padding: 0px 48px;
+}

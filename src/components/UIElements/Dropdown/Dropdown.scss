@@ -1,0 +1,218 @@
+@import "../sass/variables";
+@import "../sass/mixins/typography";
+
+$height:40px;
+$spacing:10px;
+$select-colour:#2875C7;
+$font-size:14px;
+$border-colour:$snow;
+$icon-width:14px;
+
+div.dropdown-container {
+  border-radius:2px;
+
+}
+
+div.dropdown-container p{
+  color:$error;
+  text-align: left;
+  margin-top: 8px;
+  @include font-body-bd4;
+}
+
+.dropdown-container-xs{
+  width: 120px;
+}
+
+.dropdown-container-sm{
+  width: 160px;
+}
+
+.dropdown-container-md{
+  width: 200px;
+}
+
+.dropdown-container-lg{
+  width: 280px;
+}
+
+.dropdown-display-disabled{
+  background-color: $chalk !important;
+  color: $concrete !important;
+}
+
+.dropdown-display-xs{
+  width: 120px;
+  height: 24px;
+  background-position-x: 104px !important;
+  background-size: 8px 6px !important;
+  line-height: 24px;
+}
+
+.dropdown-display-sm{
+  width: 160px;
+  height: 32px;
+  background-position-x: 144px !important;
+  background-size: 9px 7px !important;
+  line-height: 32px;
+}
+
+.dropdown-display-md{
+  margin-left: 48px;
+  width: 100px;
+  height: 40px;
+  background-position-x: 176px !important;
+  background-size: 10px 8px !important;
+  line-height: 40px;
+}
+.svgClass{
+  fill: $snow;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  vertical-align: middle;
+}
+.dropdown-display-lg{
+  width: 280px;
+  height: 48px;
+  background-position-x: 256px !important;
+  background-size: 10px 8px !important;
+  line-height: 48px;
+}
+
+div.dropdown-display{
+  text-align: left;
+  color: $snow;
+  cursor:pointer;
+  border:solid 1px $border-colour;
+  box-sizing: border-box;
+  //background: url(../images/caret.png) no-repeat right transparent;
+  >span {
+    @include font-body-bd1;
+    font-size:12px;
+    width:50%;
+    position:relative;
+    box-sizing: border-box;
+    padding-right:$icon-width+$spacing*2;
+    padding-left:$spacing;
+  }
+}
+
+div.dropdown-display--clicked{
+  @extend div.dropdown-display;
+}
+
+
+div.dropdown-list{
+  padding-top: 8px;
+  width:100%;
+  position:relative;
+  z-index: 999;
+  //border:solid 1px $border-colour;
+  -ms-transform: scale(1, 0); /* IE 9 */
+  -webkit-transform: scale(1, 0); /* Chrome, Safari, Opera */
+  transform: scale(1, 0);
+  transition: transform ease 50ms;
+  transition: -webkit-transform ease 50ms;
+  >div {
+    position:absolute;
+    width:100%;
+    border: 2px solid $chalk;
+    border-radius: 4px;
+    cursor:pointer;
+    background:white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    >div {
+      text-align: left;
+      width:100%;
+      //padding:0 $spacing;
+      box-sizing: border-box;
+      border:none;
+      border-top:none;
+      @include font-body-bd1;
+      font-size: 12px;
+      $icon-width:20px;
+
+
+      &.selected {
+        background:$select-colour;
+        color:white;
+      }
+      >span {
+        padding:0 $spacing;
+        float:left;
+        width:100%;
+        color: $concrete;
+        &:hover {
+          color: black;
+          background-color: $snow;
+        }
+      }
+    }
+  }
+}
+
+div.dropdown-container-lg div.dropdown-list >div >div >span{
+  line-height: 48px;
+}
+
+div.dropdown-container-lg div.dropdown-list >div >div {
+  height: 48px;
+}
+
+div.dropdown-container-md div.dropdown-list >div >div >span{
+  line-height: 40px;
+}
+
+div.dropdown-container-md div.dropdown-list >div >div {
+  height: 40px;
+}
+
+div.dropdown-container-sm div.dropdown-list >div >div >span{
+  line-height: 32px;
+}
+
+div.dropdown-container-sm div.dropdown-list >div >div {
+  height: 32px;
+}
+
+div.dropdown-container-xs div.dropdown-list >div >div >span{
+  line-height: 24px;
+}
+
+div.dropdown-container-xs div.dropdown-list >div >div {
+  height: 24px;
+}
+
+div.dropdown-container--show > div.dropdown-list {
+  transform:(scale(1, 1)) ;
+}
+
+label{
+  display: block;
+  text-align: left;
+  color: $soapstone;
+}
+
+.label--xs {
+  @include font-heading-h6;
+
+}
+
+.label--sm {
+  @include font-heading-h6;
+}
+
+.label--md {
+  @include font-heading-h5;
+}
+
+.label--lg {
+  @include font-heading-h4;
+}
+
+.label-inactive {
+  color: $granite;
+}

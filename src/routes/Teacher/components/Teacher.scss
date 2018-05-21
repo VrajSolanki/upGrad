@@ -1,0 +1,10 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  background-color: #fff;
+}

@@ -1,0 +1,124 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+.container{
+  position: fixed;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  height:100%;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 4px;
+  cursor: default;
+}
+
+.modalContent{
+  display: flex;
+  flex-grow: 0;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.modalHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 32px;
+  padding: 0px 64px 0px 48px;
+  font-size: 2.2rem;
+  font-family: 'Avenir Next LT W01 Bold';
+  border-radius: 4px;
+  flex:0.10;
+}
+
+.modalBody{
+  font-size: 1.8rem;
+  color: $lead;
+  padding: 24px 64px 16px 48px;
+  overflow: scroll;
+  flex:0.75;
+}
+
+.modalFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0px 64px 0px 48px;
+  flex:0.15;
+}
+.button1Div{
+  display: flex;
+  flex-basis: 30%;
+}
+.Modal--xl {
+  width: 80%;
+  height: 86%;
+  border-radius: 4px;
+
+  & .modalHeader {
+    align-items: center !important;
+  }
+  & .modalBody {
+    border: 1px solid $chrome;
+  }
+  & .modalFooter{
+    align-items: center !important;
+  }
+}
+
+.Modal--md {
+  width: 584px;
+  height: 328px;
+  border-radius: 6px;
+  & .modalHeader {
+    flex:0.27;
+  }
+  & .modalFooter {
+    flex:0.30;
+  }
+  & .modalBody {
+    flex:0.43;
+  }
+}
+
+.button1 {
+  background-color: $chalk;
+  color:#000;
+  margin-right: 16px;
+  &:hover{
+    color: #000;
+    background-color: $smoke;
+  }
+  &:focus{
+  	background-color: #chalk;
+    border: solid 2px #CDCDD2;
+  }
+}
+.button2, .button1{
+  cursor: pointer;
+  font-size: 1.4rem
+}
+.button2{
+  background-color: $reddish-pink;
+  &:hover{
+    background-color: #ff5475;
+  }
+  &:focus{
+    background-color: #ff5475;
+    border: 1.5px solid $reddish-pink;
+  }
+}

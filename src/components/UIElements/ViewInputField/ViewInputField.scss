@@ -1,0 +1,26 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+
+.container{
+  display: flex;
+  flex: 1;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.inputLabel{
+  display: flex;
+  font-family: "AvenirNextLTW01-DemiCn";
+  font-size: 1.6rem;
+  color:black;
+  letter-spacing: 0.02rem;
+}
+.inputText{
+  display: flex;
+  width:100%;
+  resize: none;
+  outline: none;
+  background-color:inherit;
+  margin-top:12px;
+}

@@ -1,0 +1,36 @@
+@import "~components/UIElements/sass/variables";
+@import "~components/UIElements/sass/mixins/typography";
+.radiobutton{
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.radiobuttonLabel{
+  font-size: 1.4rem;
+  padding-left: 8px;
+  margin-top: 2px;
+  font-family: 'AvenirNextLTW01-Medium';
+}
+.radiobuttonContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  min-height: 40px;
+  color: $marble;
+  cursor: pointer;
+}
+.radiobuttonContainerActive{
+  .radiobuttonLabel{
+    color: $lead;
+  }
+}
+.radiobuttonContainer:hover{
+  .radiobuttonLabel{
+    color: $lead;
+  }
+}
